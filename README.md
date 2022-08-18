@@ -1,2 +1,2 @@
 # ml-kit-on-demand
-Using ML Kit in on demand modules
+Using ML Kit in from demand feature modules on Android.
