@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="ch.vivascu.dynamic.downloadable">
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <dist:module
+        dist:title="@string/moduleTitle">
+        <dist:delivery>
+            <dist:on-demand/>
+        </dist:delivery>
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application>
+        <activity
+            android:name="ch.vivascu.dynamic.downloadable.DownloadedActivity"
+            android:exported="false"
+            android:label="@string/title_activity_downloaded"
+            android:parentActivityName="ch.vivascu.dynamic.module.MainActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
